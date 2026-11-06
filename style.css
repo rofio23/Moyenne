@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    color: black;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+main {
+    width: 90%;
+    max-width: 550px;
+    margin: 25px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 14px;
+}
+
+.btn-ajouter {
+    background-color: darkblue;
+    color: white;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.btn-ajouter:hover {
+    background-color: navy;
+}
+
+.section-matieres {
+    margin-top: 30px;
+}
+
+.section-matieres h2 {
+    color: darkblue;
+    font-size: 19px;
+    text-align: center;
+}
+
+#liste-matieres {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.matiere-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+.matiere-info {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.btn-supprimer {
+    background-color: #d9534f;
+    color: white;
+    padding: 9px 12px;
+    flex-shrink: 0;
+}
+
+.resultat {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.resultat h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+#moyenne {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 15px 0 0;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 18px 10px;
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    main {
+        width: 92%;
+        margin: 20px auto;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    .matiere-item {
+        font-size: 14px;
+    }
+
+    .btn-supprimer {
+        font-size: 13px;
+    }
+
+    #moyenne {
+        font-size: 32px;
+    }
+}
+

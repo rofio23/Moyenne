@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul de moyenne générale</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>CALCUL DE MOYENNE</h1>
+    </header>
+
+    <main>
+        <form id="formulaire">
+
+            <label for="matiere">Nom de la matière</label>
+            <input
+                type="text"
+                id="matiere"
+                placeholder="Ex : Mathématiques"
+                required
+            >
+
+            <label for="note">Note sur 20</label>
+            <input
+                type="text"
+                id="note"
+                inputmode="decimal"
+                placeholder="Ex : 15,5"
+                required
+            >
+
+            <label for="coefficient">Coefficient</label>
+            <input
+                type="text"
+                id="coefficient"
+                inputmode="decimal"
+                placeholder="Ex : 2"
+                required
+            >
+
+            <button type="submit" class="btn-ajouter">
+                AJOUTER LA MATIÈRE
+            </button>
+
+        </form>
+
+        <section class="section-matieres">
+            <h2>MES MATIÈRES</h2>
+
+            <ul id="liste-matieres"></ul>
+        </section>
+
+        <section class="resultat">
+            <h2>MOYENNE GÉNÉRALE</h2>
+            <p id="moyenne">-- / 20</p>
+        </section>
+    </main>
+
+</body>
+</html>
+
